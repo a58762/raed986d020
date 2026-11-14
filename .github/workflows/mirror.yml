@@ -1,0 +1,35 @@
+name: mirror
+on:
+  schedule:
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: mirror
+  cancel-in-progress: true
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --quiet pyyaml
+      - name: rebuild config
+        env:
+          SUB_URL: ${{ secrets.SUB_URL }}
+        run: python clean.py
+      - name: commit if changed
+        run: |
+          git config user.name "mirror-bot"
+          git config user.email "mirror-bot@users.noreply.github.com"
+          git add s.yaml
+          if git diff --staged --quiet; then
+            echo "no change"
+          else
+            git commit -m "auto: refresh $(date -u +%F_%H%M)"
+            git push
+          fi
