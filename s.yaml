@@ -97,14 +97,6 @@ proxies:
   alterId: 0
   cipher: auto
   udp: true
-- name: 美国02-IPLC-EIP
-  type: vmess
-  server: a1578b4abe4bef138424a04ff932cec6.443.onl
-  port: 53052
-  uuid: a9837990-20db-430b-906a-206758f52bb8
-  alterId: 0
-  cipher: auto
-  udp: true
 - name: 日本01-IPLC-EIP
   type: vmess
   server: a1578b4abe4bef138424a04ff932cec6.443.onl
@@ -121,6 +113,14 @@ proxies:
   alterId: 0
   cipher: auto
   udp: true
+- name: 美国02-IPLC-EIP
+  type: vmess
+  server: a1578b4abe4bef138424a04ff932cec6.443.onl
+  port: 53052
+  uuid: a9837990-20db-430b-906a-206758f52bb8
+  alterId: 0
+  cipher: auto
+  udp: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -128,9 +128,9 @@ proxy-groups:
   - 香港01-IPLC-EIP
   - 台湾01-IPLC-EIP
   - 新加坡01-IPLC-EIP
-  - 美国02-IPLC-EIP
   - 日本01-IPLC-EIP
   - 美国01-IPLC-EIP
+  - 美国02-IPLC-EIP
   - 🔯 故障转移
   - 🚄 高速公网
 - name: 🔯 故障转移
@@ -139,9 +139,9 @@ proxy-groups:
   - 香港01-IPLC-EIP
   - 台湾01-IPLC-EIP
   - 新加坡01-IPLC-EIP
-  - 美国02-IPLC-EIP
   - 日本01-IPLC-EIP
   - 美国01-IPLC-EIP
+  - 美国02-IPLC-EIP
   url: https://www.gstatic.com/generate_204
   interval: 300
   timeout: 5000
@@ -151,9 +151,9 @@ proxy-groups:
   - 香港01-IPLC-EIP
   - 台湾01-IPLC-EIP
   - 新加坡01-IPLC-EIP
-  - 美国02-IPLC-EIP
   - 日本01-IPLC-EIP
   - 美国01-IPLC-EIP
+  - 美国02-IPLC-EIP
   url: https://www.gstatic.com/generate_204
   interval: 300
   timeout: 5000
@@ -164,9 +164,9 @@ proxy-groups:
   - 香港01-IPLC-EIP
   - 台湾01-IPLC-EIP
   - 新加坡01-IPLC-EIP
-  - 美国02-IPLC-EIP
   - 日本01-IPLC-EIP
   - 美国01-IPLC-EIP
+  - 美国02-IPLC-EIP
   - 🚀 节点选择
 - name: 🤖 AI
   type: select
@@ -174,9 +174,9 @@ proxy-groups:
   - 香港01-IPLC-EIP
   - 台湾01-IPLC-EIP
   - 新加坡01-IPLC-EIP
-  - 美国02-IPLC-EIP
   - 日本01-IPLC-EIP
   - 美国01-IPLC-EIP
+  - 美国02-IPLC-EIP
   - 🚀 节点选择
 - name: 🎙 Discord
   type: select
@@ -184,9 +184,9 @@ proxy-groups:
   - 香港01-IPLC-EIP
   - 台湾01-IPLC-EIP
   - 新加坡01-IPLC-EIP
-  - 美国02-IPLC-EIP
   - 日本01-IPLC-EIP
   - 美国01-IPLC-EIP
+  - 美国02-IPLC-EIP
   - 🚀 节点选择
 - name: 📘 Facebook
   type: select
@@ -194,9 +194,9 @@ proxy-groups:
   - 香港01-IPLC-EIP
   - 台湾01-IPLC-EIP
   - 新加坡01-IPLC-EIP
-  - 美国02-IPLC-EIP
   - 日本01-IPLC-EIP
   - 美国01-IPLC-EIP
+  - 美国02-IPLC-EIP
   - 🚀 节点选择
 - name: 🌍 国外媒体
   type: select
@@ -204,9 +204,9 @@ proxy-groups:
   - 香港01-IPLC-EIP
   - 台湾01-IPLC-EIP
   - 新加坡01-IPLC-EIP
-  - 美国02-IPLC-EIP
   - 日本01-IPLC-EIP
   - 美国01-IPLC-EIP
+  - 美国02-IPLC-EIP
   - 🚀 节点选择
 - name: 📲 电报信息
   type: select
@@ -214,9 +214,9 @@ proxy-groups:
   - 香港01-IPLC-EIP
   - 台湾01-IPLC-EIP
   - 新加坡01-IPLC-EIP
-  - 美国02-IPLC-EIP
   - 日本01-IPLC-EIP
   - 美国01-IPLC-EIP
+  - 美国02-IPLC-EIP
   - 🚀 节点选择
 - name: 🍎 苹果服务
   type: select
@@ -224,11 +224,11 @@ proxy-groups:
   - 香港01-IPLC-EIP
   - 台湾01-IPLC-EIP
   - 新加坡01-IPLC-EIP
-  - 美国02-IPLC-EIP
   - 日本01-IPLC-EIP
   - 美国01-IPLC-EIP
-  - 🚀 节点选择
+  - 美国02-IPLC-EIP
   - DIRECT
+  - 🚀 节点选择
 rules:
 - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
 - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
