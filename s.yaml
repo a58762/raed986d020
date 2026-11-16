@@ -75,7 +75,7 @@ dns:
 proxies:
 - name: 香港01-IPLC-EIP
   type: vmess
-  server: lgq919rz.cn-in.net
+  server: w7e017r9.cn-in.net
   port: 53011
   uuid: a9837990-20db-430b-906a-206758f52bb8
   alterId: 0
@@ -83,7 +83,7 @@ proxies:
   udp: true
 - name: 台湾01-IPLC-EIP
   type: vmess
-  server: lgq919rz.cn-in.net
+  server: w7e017r9.cn-in.net
   port: 53021
   uuid: a9837990-20db-430b-906a-206758f52bb8
   alterId: 0
@@ -91,7 +91,7 @@ proxies:
   udp: true
 - name: 新加坡01-IPLC-EIP
   type: vmess
-  server: lgq919rz.cn-in.net
+  server: w7e017r9.cn-in.net
   port: 53031
   uuid: a9837990-20db-430b-906a-206758f52bb8
   alterId: 0
@@ -99,7 +99,7 @@ proxies:
   udp: true
 - name: 日本01-IPLC-EIP
   type: vmess
-  server: lgq919rz.cn-in.net
+  server: w7e017r9.cn-in.net
   port: 53041
   uuid: a9837990-20db-430b-906a-206758f52bb8
   alterId: 0
@@ -107,7 +107,7 @@ proxies:
   udp: true
 - name: 美国01-IPLC-EIP
   type: vmess
-  server: lgq919rz.cn-in.net
+  server: w7e017r9.cn-in.net
   port: 53051
   uuid: a9837990-20db-430b-906a-206758f52bb8
   alterId: 0
@@ -115,7 +115,7 @@ proxies:
   udp: true
 - name: 美国02-IPLC-EIP
   type: vmess
-  server: lgq919rz.cn-in.net
+  server: w7e017r9.cn-in.net
   port: 53052
   uuid: a9837990-20db-430b-906a-206758f52bb8
   alterId: 0
